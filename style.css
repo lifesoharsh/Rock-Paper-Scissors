@@ -1,0 +1,90 @@
+*{
+    margin:0;
+}
+body{
+    background-color: antiquewhite;
+    overflow: auto;
+}
+header{
+    background-color: rgb(9, 9, 80);
+    color:aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+#username{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+#btn, #playagain{
+    border-radius: 5px;
+    font-family: fantasy;
+}
+#btn:hover, #playagain:hover{
+    transform: translateX(5px);
+}
+#rules{
+    margin-left:42%;
+}
+#images{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:50px;
+}
+
+.image-class:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+.image-class{
+    height:150px;
+    width:150px;
+    border-radius: 50%;
+}
+#scissors{
+    height:140px;
+    width:140px;
+}
+#divider{
+    width:4px;
+    background-color:black;
+    height: 100%;
+    align-self: stretch;
+}
+.you, .Computer{
+    color: #5CCE77;
+    font-weight: bold;
+    font-family:cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scoreboard{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap:200px;
+    margin-top: 50px;
+    height:300px;
+}
+.Result{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer{
+    background-color: rgb(9, 9, 80);
+    color:aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    padding:10px;
+}
