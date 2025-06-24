@@ -1,5 +1,5 @@
 # Rock Paper Scissors Game 🎮
-
+Deployed using Vercel: https://rock-paper-scissors-rouge-phi.vercel.app/
 Challenge the computer in this classic and interactive web-based game!
 
 ## 🎯 Features
