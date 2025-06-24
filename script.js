@@ -16,6 +16,21 @@ button.onclick = () => {
     player.style.fontWeight = 'bold'
     player.style.color = '#5CCE77'
 }
+let mode = 'light'
+let toggle = document.getElementById('toggle')
+let body = document.querySelector('body')
+toggle.addEventListener("click",()=>{
+    if(mode === 'light') {
+        body.classList.add('dark')
+        body.classList.remove('light')
+        mode = "dark"
+    }
+    else{
+        body.classList.add('light')
+        body.classList.remove('dark')
+        mode = "light"
+    }
+})
 
 let finished = false
 const compChoices = ['rock', 'paper', 'scissors']
@@ -56,21 +71,21 @@ userChoice.forEach((val) => {
             if (compPick === 'rock') {
                 result.innerHTML = `DRAW: Computer picked Stone`
                 result.classList.add('Result')
-                player.innerHTML += "<div style = 'color : black'>0</div> "
-                computer.innerHTML += "<div style = 'color : black'>0</div> "
+                player.innerHTML += "<div style = 'color : #555555'>0</div> "
+                computer.innerHTML += "<div style = 'color : #555555'>0</div> "
             }
             else if (compPick === 'scissors') {
                 result.innerHTML = "YOU WIN: Computer picked Scissors"
                 result.classList.add('Result')
-                player.innerHTML += "<div style = 'color : black'>1</div> "
-                computer.innerHTML += "<div style = 'color : black'>0</div> "
+                player.innerHTML += "<div style = 'color : #555555'>1</div> "
+                computer.innerHTML += "<div style = 'color : #555555'>0</div> "
                 userScore++;
             }
             else {
                 result.innerHTML = `YOU LOST: Computer picked Paper`
                 result.classList.add('Result')
-                player.innerHTML += "<div style = 'color : black'>0</div> "
-                computer.innerHTML += "<div style = 'color : black'>1</div> "
+                player.innerHTML += "<div style = 'color : #555555'>0</div> "
+                computer.innerHTML += "<div style = 'color : #555555'>1</div> "
                 compScore++;
             }
 
@@ -79,21 +94,21 @@ userChoice.forEach((val) => {
             if (compPick === 'scissors') {
                 result.innerHTML = "DRAW: Computer picked Scissors"
                 result.classList.add('Result')
-                player.innerHTML += "<div style = 'color : black'>0</div> "
-                computer.innerHTML += "<div style = 'color : black'>0</div> "
+                player.innerHTML += "<div style = 'color : #555555'>0</div> "
+                computer.innerHTML += "<div style = 'color : #555555'>0</div> "
             }
             else if (compPick === 'paper') {
                 result.innerHTML = "YOU WIN: Computer picked Paper"
                 result.classList.add('Result')
-                player.innerHTML += "<div style = 'color : black'>1</div> "
-                computer.innerHTML += "<div style = 'color : black'>0</div> "
+                player.innerHTML += "<div style = 'color : #555555'>1</div> "
+                computer.innerHTML += "<div style = 'color : #555555'>0</div> "
                 userScore++;
             }
             else {
                 result.innerHTML = "YOU LOST: Computer picked Stone"
                 result.classList.add('Result')
-                player.innerHTML += "<div style = 'color : black'>0</div> "
-                computer.innerHTML += "<div style = 'color : black'>1</div> "
+                player.innerHTML += "<div style = 'color : #555555'>0</div> "
+                computer.innerHTML += "<div style = 'color : #555555'>1</div> "
                 compScore++;
             }
         }
@@ -101,21 +116,21 @@ userChoice.forEach((val) => {
             if (compPick === 'paper') {
                 result.innerHTML = "DRAW: Computer picked Paper"
                 result.classList.add('Result')
-                player.innerHTML += "<div style = 'color : black'>0</div> "
-                computer.innerHTML += "<div style = 'color : black'>0</div> "
+                player.innerHTML += "<div style = 'color : #555555'>0</div> "
+                computer.innerHTML += "<div style = 'color : #555555'>0</div> "
             }
             else if (compPick === 'rock') {
                 result.innerHTML = "YOU WIN: Computer picked Stone"
                 result.classList.add('Result')
-                player.innerHTML += "<div style = 'color : black'>1</div> "
-                computer.innerHTML += "<div style = 'color : black'>0</div> "
+                player.innerHTML += "<div style = 'color : #555555'>1</div> "
+                computer.innerHTML += "<div style = 'color : #555555'>0</div> "
                 userScore++;
             }
             else {
                 result.innerHTML = `YOU LOST: Computer picked Scissors`
                 result.classList.add('Result')
-                player.innerHTML += "<div style = 'color : black'>0</div> "
-                computer.innerHTML += "<div style = 'color : black'>1</div> "
+                player.innerHTML += "<div style = 'color : #555555'>0</div> "
+                computer.innerHTML += "<div style = 'color : #555555'>1</div> "
                 compScore++;
             }
         }
