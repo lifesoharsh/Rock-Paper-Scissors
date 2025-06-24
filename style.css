@@ -19,9 +19,13 @@ header{
     align-items: center;
     padding-top: 10px;
 }
-#btn, #playagain{
+#btn, #playagain,#toggle{
     border-radius: 5px;
     font-family: fantasy;
+}
+#toggle{
+    position: absolute;
+    right: 20px;
 }
 #btn:hover, #playagain:hover{
     transform: translateX(5px);
@@ -87,4 +91,12 @@ header{
     bottom: 0;
     width:100%;
     padding:10px;
+}
+
+.light{
+    color:rgb(30, 30, 30)
+}
+.dark{
+    background-color: rgb(29, 28, 28);
+    color:white
 }
